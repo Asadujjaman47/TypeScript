@@ -1,16 +1,5 @@
-// aray 
-let a: any[] = [];
-
-a.push("Bangadesh");
-a.push(34);
-
-// object
-let b: {
-    name: any,
-    age: any
+const myFunc = (a: string, b: string, c: string = "true" ) : string => {
+    return a+b;
 };
 
-b =  {
-    name: 'Bangladesh',
-    age: 45
-}
+myFunc("Asad", "Akul");

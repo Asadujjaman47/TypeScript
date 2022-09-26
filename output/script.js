@@ -1,11 +1,5 @@
 "use strict";
-// aray 
-let a = [];
-a.push("Bangadesh");
-a.push(34);
-// object
-let b;
-b = {
-    name: 'Bangladesh',
-    age: 45
+const myFunc = (a, b, c = "true") => {
+    return a + b;
 };
+myFunc("Asad", "Akul");
