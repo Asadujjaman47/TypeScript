@@ -1,4 +1,5 @@
 "use strict";
-let a;
-a = 5;
-a = "Asad";
+// aray 
+let a = [];
+a.push("Bangadesh");
+a.push(34);

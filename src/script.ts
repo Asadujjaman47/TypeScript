@@ -1,4 +1,5 @@
-let a: any;
+// aray 
+let a: any[] = [];
 
-a = 5;
-a = "Asad";
+a.push("Bangadesh");
+a.push(34);
