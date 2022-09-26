@@ -1,5 +1,7 @@
 "use strict";
-let a;
+// normal variable
 let b;
-a = "Asad";
-b = '34';
+b = "Asad";
+// array
+let a = [];
+a.push("Asad", 4, false);

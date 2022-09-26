@@ -1,7 +1,11 @@
-let a : string;
+// normal variable
+let b: string | number
 
-let b: number;
+b = "Asad";
 
-a = "Asad";
+// array
 
-b = '34'
+let a: (string | number)[] = [];
+
+a.push("Asad", 4, false);
+
