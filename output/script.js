@@ -1,9 +1,9 @@
 "use strict";
 class Player {
-    constructor(n, a, c) {
-        this.name = n;
-        this.age = a;
-        this.country = c;
+    constructor(name, age, country) {
+        this.name = name;
+        this.age = age;
+        this.country = country;
     }
     play() {
         console.log(`${this.name} from ${this.country}  is playing!`);
@@ -11,7 +11,10 @@ class Player {
 }
 ;
 const mashrafi = new Player('Mashrafi', 40, 'Bangaldesh');
-const shakib = new Player('Shakib', 38, 'Bangaldesh');
-// Players array
-const Players = [];
-Players.push(mashrafi, shakib);
+const sakib = new Player('Sakib', 38, 'Bangaldesh');
+sakib.name = "Mashrafi";
+sakib.age = 40;
+sakib.country = 'England';
+console.log(sakib.name);
+console.log(sakib.age);
+console.log(sakib.country);
