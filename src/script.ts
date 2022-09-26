@@ -1,4 +1,7 @@
-// console.log("hello");
+let playerName;
 
-const country = "I love Bangladesh";
-console.log(country);
+playerName = "Mashrafi"
+
+playerName = 34;
+
+ console.log(playerName);
