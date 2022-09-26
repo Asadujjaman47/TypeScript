@@ -1,12 +1,12 @@
-type stringOrNum = string | number;
-type userType = { name: string; age: number };
+let userDetails: (id: number | string, userInfo: {
+    name: string,
+    age: number
+}) => void;
 
-const userDetails = (id: stringOrNum, user: userType
-) => {
-    console.log(`User id is: ${id}, name is ${user.name} and age is ${user.age}`);
-};
+userDetails = (id: number | string, userInfo: {
+    name: string,
+    age: number,
+}) => {
 
-const sayHello = (user: userType) => {
-    console.log(`Hello ${user.age > 50 ? "Sir" : "Mr."} ${user.name}`);
 }
 
