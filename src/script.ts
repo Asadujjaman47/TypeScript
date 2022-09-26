@@ -1,13 +1,10 @@
-// array
+// object
 
-let mixed = ['apple', 3, true, {}];
+let person = {
+    name: "Mashrafi",
+    age: 35,
+    isCaptain: true,
+};
 
-mixed.push(34);
-mixed.push('banana');
-mixed.push(false);
-
-// others type get error:
-mixed.push({
-    name: "Asad",
-});
-
+person.name = 'Sakib';
+person.country = "Bangladesh";

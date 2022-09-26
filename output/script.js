@@ -1,10 +1,9 @@
 "use strict";
-// array
-let mixed = ['apple', 3, true, {}];
-mixed.push(34);
-mixed.push('banana');
-mixed.push(false);
-// others type get error:
-mixed.push({
-    name: "Asad",
-});
+// object
+let person = {
+    name: "Mashrafi",
+    age: 35,
+    isCaptain: true,
+};
+person.name = 'Sakib';
+person.country = "Bangladesh";
