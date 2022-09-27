@@ -1,7 +1,12 @@
-import { Player } from './classes/Player.js';
-const mashrafi = new Player('Mashrafi', 40, 'Bangaldesh');
-let sakib;
-sakib = new Player("Sakib", 35, "Bangladesh");
-const Players = [];
-Players.push(sakib);
-Players.push(mashrafi);
+"use strict";
+// GENERICS
+const addID = (obj) => {
+    let id = Math.floor(Math.random() * 100);
+    return Object.assign(Object.assign({}, obj), { id });
+};
+let user = addID({
+    name: "Mashrafi",
+    age: 40,
+    country: 'Bangladesh'
+});
+addID(user);

@@ -1,12 +1,18 @@
-import { Player } from './classes/Player.js';
-import { IsPlayer } from './interface/IsPlayer.js';
+// GENERICS
 
-const mashrafi = new Player('Mashrafi', 40, 'Bangaldesh');
-let sakib: IsPlayer;
+const addID = <
+    T extends {
+        name: string,
+        age: number
+    }>(obj: T) => {
+    let id = Math.floor(Math.random() * 100);
+    return { ...obj, id };
+};
 
-sakib = new Player("Sakib", 35, "Bangladesh")
+let user = addID({
+    name: "Mashrafi",
+    age: 40,
+    country: 'Bangladesh'
+});
 
-const Players: IsPlayer[] = [];
-
-Players.push(sakib);
-Players.push(mashrafi);
+addID(user);
