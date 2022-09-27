@@ -1,20 +1,10 @@
-// ENUMS
+// Tuples 
 
-enum ResType { SUCCESS, FAILURE, UNAUTHENTICATED, FORBIDDEN };
+//array
+let a = [3, 'hello', { p: 3 }];
 
-interface APIResponse<T> {
-    status: number;
-    type: ResType;
-    data: T;
-}
+// tuples
+let b: [number, string, object] = [4, 'word', {t: 1}];
 
-const response1: APIResponse<object> = {
-    status: 200,
-    type: ResType.UNAUTHENTICATED,
-    data: {
-        name: 'Test',
-        something: 300
-    }
-}
 
-console.log(response1);
+b.push();   // no need to use push
